@@ -1,5 +1,60 @@
-*{
+*, *::before, *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+li {list-style: none;}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+img, span, svg{display: block;}
+
+@font-face {
+  font-family: 'SF Pro Text';
+/*BOLD*/
+  src: url('../fonts/SFProText-Bold.eot');
+  src: url('../fonts/SFProText-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFProText-Bold.woff2') format('woff2'),
+  url('../fonts/SFProText-Bold.woff') format('woff'),
+  url('../fonts/SFProText-Bold.ttf') format('truetype'),
+  url('../fonts/SFProText-Bold.svg#SFProText-Bold') format('svg');
+/*LIGHT*/
+  src: url('../fonts/SFProText-Light.eot');
+  src: url('../fonts/SFProText-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFProText-Light.woff2') format('woff2'),
+  url('../fonts/SFProText-Light.woff') format('woff'),
+  url('../fonts/SFProText-Light.ttf') format('truetype'),
+  url('../fonts/SFProText-Light.svg#SFProText-Light') format('svg');
+/*NORMAL*/
+  src: url('../fonts/SFProText-Regular.eot');
+  src: url('../fonts/SFProText-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFProText-Regular.woff2') format('woff2'),
+  url('../fonts/SFProText-Regular.woff') format('woff'),
+  url('../fonts/SFProText-Regular.ttf') format('truetype'),
+  url('../fonts/SFProText-Regular.svg#SFProText-Regular') format('svg');
+/*SEMIBOLD*/
+  src: url('../fonts/SFProText-Semibold.eot');
+  src: url('../fonts/SFProText-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFProText-Semibold.woff2') format('woff2'),
+  url('../fonts/SFProText-Semibold.woff') format('woff'),
+  url('../fonts/SFProText-Semibold.ttf') format('truetype'),
+  url('../fonts/SFProText-Semibold.svg#SFProText-Semibold') format('svg');
+
+  //font-weight: 300;
+  //font-style: normal;
+  //font-display: swap;
+  //font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }

@@ -1,3 +1,14 @@
+
+:root{
+/*VARIABLES*/
+  /*COLORS*/
+  --grey: #454F5B;
+  --black:  #161C24;
+  --main:  #4295E4; /* (кнопка голубая)*/
+  --white:  #FFFFFF;
+}
+
+/*RESET*/
 *, *::before, *::after{
   margin: 0;
   padding: 0;
@@ -17,33 +28,31 @@ button{
   font: inherit;
   cursor: pointer;
 }
-
-img, span, svg{display: block;}
-
+html{
 @font-face {
   font-family: 'SF Pro Text';
-/*BOLD*/
+  /*BOLD*/
   src: url('../fonts/SFProText-Bold.eot');
   src: url('../fonts/SFProText-Bold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/SFProText-Bold.woff2') format('woff2'),
   url('../fonts/SFProText-Bold.woff') format('woff'),
   url('../fonts/SFProText-Bold.ttf') format('truetype'),
   url('../fonts/SFProText-Bold.svg#SFProText-Bold') format('svg');
-/*LIGHT*/
+  /*LIGHT*/
   src: url('../fonts/SFProText-Light.eot');
   src: url('../fonts/SFProText-Light.eot?#iefix') format('embedded-opentype'),
   url('../fonts/SFProText-Light.woff2') format('woff2'),
   url('../fonts/SFProText-Light.woff') format('woff'),
   url('../fonts/SFProText-Light.ttf') format('truetype'),
   url('../fonts/SFProText-Light.svg#SFProText-Light') format('svg');
-/*NORMAL*/
+  /*NORMAL*/
   src: url('../fonts/SFProText-Regular.eot');
   src: url('../fonts/SFProText-Regular.eot?#iefix') format('embedded-opentype'),
   url('../fonts/SFProText-Regular.woff2') format('woff2'),
   url('../fonts/SFProText-Regular.woff') format('woff'),
   url('../fonts/SFProText-Regular.ttf') format('truetype'),
   url('../fonts/SFProText-Regular.svg#SFProText-Regular') format('svg');
-/*SEMIBOLD*/
+  /*SEMIBOLD*/
   src: url('../fonts/SFProText-Semibold.eot');
   src: url('../fonts/SFProText-Semibold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/SFProText-Semibold.woff2') format('woff2'),
@@ -57,4 +66,34 @@ img, span, svg{display: block;}
   //font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+}
+
+img, span, svg{display: block;}
+
+/*MAIN*/
+.container{
+  //max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+.top_line{
+  background-color: var(--grey);
+  font-size: 16px;
+  position: relative;
+  line-height: 44px;
+  text-align: center;
+  color: var(--white);
+  //max-width: 1262px;
+  //width: 100%;
+/*  .container{
+    position: relative;
+  }*/
+  span{
+    display: inline-block;
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+  }
 }

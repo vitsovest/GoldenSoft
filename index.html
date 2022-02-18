@@ -23,8 +23,10 @@
 <!--TOP MENU WITH BURGER-->
 <header>
     <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand d-none d-md-block" href="#">
+                <img src="images/logo.svg" alt="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Главная</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,27 +50,32 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Оптовая продажа<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Оптовая продажа</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">О нас<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">О нас</a>
                     </li>
                 </ul>
                 <!--right phone likes cart-->
-                <ul>
-                    <li>+7 (966) 55 88 499</li>
-                    <li>
-                        <a href="#">
-                            <img src="images/likes.svg" alt="likes">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/cart.svg" alt="cart">
-                        </a>
-                    </li>
-                </ul>
             </div>
+            <ul class="navbar-nav top_menu_right">
+                <li>
+                    <img src="images/phone.svg" alt="phone">
+                </li>
+                <li>
+                    +7 (966) 55 88 499
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/likes.svg" alt="likes">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/cart.svg" alt="cart">
+                    </a>
+                </li>
+            </ul>
         </nav>
     </div>
 </header>

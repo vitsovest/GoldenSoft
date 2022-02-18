@@ -8,6 +8,12 @@
   --white:  #FFFFFF;
 }
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content
+  }
+}
+
 /*RESET*/
 *, *::before, *::after{
   margin: 0;
@@ -85,6 +91,10 @@ img, span, svg{display: block;}
   line-height: 44px;
   text-align: center;
   color: var(--white);
+  @include max-screen(767px){
+    font-size: 12px;
+    line-height: 36px;
+  }
   //max-width: 1262px;
   //width: 100%;
 /*  .container{
@@ -95,5 +105,34 @@ img, span, svg{display: block;}
     text-decoration: underline;
     position: absolute;
     right: 0;
+    @include max-screen(768px){
+      display: none;
+    }
+  }
+}
+
+header {
+  .nav-item{
+    margin-left: 32px;
+    &:first-of-type{
+      margin-left: 101px;
+    }
+  }
+  .top_menu_right {
+    position: absolute;
+    right: 0;
+    @include max-screen(768px){
+      flex-direction: row;
+      top: 23px;
+    }
+    li {
+      margin-left: 34px;
+      &:nth-of-type(2) {  //phone number
+        margin-left: 9px; //margin to phone picture
+        @include max-screen(768px) {  //display none on smartphones
+          display: none;
+        }
+      }
+    }
   }
 }
